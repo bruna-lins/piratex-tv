@@ -1,0 +1,121 @@
+<!-- Informa ao navegador que o documento é um HTML-->
+<!doctype html>
+<!-- define o idioma da página -->
+<html lang="pt-BR">
+  <!-- guarda informações que não aparecem no conteúdo da página -->
+  <head>
+    <!-- evita problemas com acentuações e caracteres especiais. Segue a convenção do idioma. -->
+    <meta charset="UTF-8" />
+    <!-- Responsividade: diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Filmes mais populares</title>
+
+    <!-- linka com o arquivo de css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <!-- Tudo que é visível na página -->
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="bilheterias.html">Bilheterias</a></li>
+        <li><a href="netflix.html">Netflix</a></li>
+      </ul>
+    </nav>
+    <!-- Cabeçalho da página -->
+    <header>
+      <h1>Filmes Mais Populares da História</h1>
+      <p>Está página reúne o ranking dos filmes mais vistos.</p>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- section separa conteúdos por assunto -->
+      <section>
+        <h2>Top 3 Bilheterias Mundiais</h2>
+        <!-- ol cria uma lista ordenada -->
+        <ol class="lista-filmes">
+          <!-- li continua representando um item da lista, agora com mais conteúdo dentro -->
+          <li class="filme-item">
+            <!-- img adiciona uma imagem na página -->
+            <img
+              src="https://image.tmdb.org/t/p/w500/kyeqWdyUXW608qlYkRqosgbbJyK.jpg"
+              alt="Pôster do filme Avatar"
+            />
+            <!-- div foi usada para agrupar os textos do filme e facilitar a estilização -->
+            <div class="filme-texto">
+              <strong>Avatar (2009)</strong> - US$ 2,923,710,708
+            </div>
+          </li>
+          <li class="filme-item">
+            <img
+              src="https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
+              alt="Pôster do filme Avengers: Endgame"
+            />
+            <div class="filme-texto">
+              <strong>Avengers: Endgame (2019)</strong> — US$ 2,799,439,100
+            </div>
+          </li>
+          <li class="filme-item">
+            <img
+              src="https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"
+              alt="Pôster do filme Avatar: The Way of Water"
+            />
+            <div class="filme-texto">
+              <strong>Avatar: The Way of Water (2022)</strong> — US$
+              2,334,484,620
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- outra section separa a segunda lista temática -->
+      <section>
+        <h2>Top 3 Filmes com Mais Visualizações da Netflix</h2>
+        <ol class="lista-filmes">
+          <li class="filme-item">
+            <img
+              src="https://image.tmdb.org/t/p/w500/9tk3Si960hg4E49eMt81dS7Qe9Z.jpg"
+              alt="Pôster do filme KPop Demon Hunters"
+            />
+            <div class="filme-texto">
+              <strong>KPop Demon Hunters (2025)</strong> — 325,1 milhões de
+              views
+            </div>
+          </li>
+          <li class="filme-item">
+            <img
+              src="https://image.tmdb.org/t/p/w500/lAXONuqg41NwUMuzMiFvicDET9Y.jpg"
+              alt="Pôster do filme Red Notice"
+            />
+            <div class="filme-texto">
+              <strong>Red Notice (2021)</strong> — 230,9 milhões de views
+            </div>
+          </li>
+          <li class="filme-item">
+            <img
+              src="https://image.tmdb.org/t/p/w500/sdw7qMx8ogj9agE7M7nGZE5riTn.jpg"
+              alt="Pôster do filme Carry-On"
+            />
+            <div class="filme-texto">
+              <strong>Carry-On (2024)</strong> — 172,1 milhões de views
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- section usada para a área do áudio -->
+      <section>
+        <!-- audio adiciona um player de som na página -->
+        <audio controls>
+          <!-- source informa o arquivo de áudio e o tipo dele -->
+          <source src="audio/04_Day_One.mp3" type="audio/mp3" />
+          Seu navegador não suporta áudios.
+        </audio>
+      </section>
+    </main>
+  </body>
+</html>

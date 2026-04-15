@@ -1,0 +1,138 @@
+* {
+  /* box-sinzing: controlar como a largura e altura sao calculados;
+    border-box: padding e borda entram no tamanho total do elemento.
+    */
+  box-sizing: border-box;
+}
+
+body {
+  /* margin: criar o espaço externo */
+  margin: 0;
+  /* padding: cria o espaço interno */
+  padding: 0;
+  /* define a fonte padrão do site */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #081120 0%, #132238 100%);
+  color: #f4f7fb;
+}
+
+nav {
+  background-color: rgba(5, 12, 22, 0.92);
+  padding: 18px 24px;
+  position: sticky;
+  /* Define a distância em relação ao topo quando o position
+   esta em uso */
+  top: 0;
+  /*  organiza a camada visual*/
+  z-index: 10;
+}
+
+nav ul {
+  /* list-style: altera o ícone da lista, inclusive remove. */
+  list-style: none;
+  padding: 0;
+  /* display: define  o comportamento do elemento; 
+  flex coloca os itens lado a lado*/
+  display: flex;
+  /* gap: criar espaço entre os itens. depende do display: flex ou grid*/
+  gap: 16px;
+  /* alinha os itens no eixo do flex */
+  justify-content: center;
+  /* permite que os itens quebrem para a linha debaixo em telas menores (depende do display)*/
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #f4f7fb;
+  /* remove ou adiciona efeitos no texto, exemplo: sublinhado*/
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 10px 16px;
+  /* arredonda os cantos: valor mais alto arredonda, valor mais 
+  baixo fica mais quadrado*/
+  border-radius: 999px;
+}
+
+nav a:hover {
+  background-color: #ffb703;
+  color: #081120;
+}
+
+header,
+main {
+  /* limita a largura máxima; rem é útil para medidas ligadas a 
+  altura  e proporção da  interface*/
+  max-width: 72rem;
+  /* o auto se adapta */
+  margin: 0 auto;
+}
+
+header {
+  padding: 56px 24px 24px;
+  /* alinhar o texto na horizontal - não depende do display */
+  text-align: center;
+}
+
+main {
+  /* display com grid cria uma estrutura em linhas e colunas, 
+    útil para organizar blocos*/
+  display: grid;
+  gap: 24px;
+  padding: 24px;
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  padding: 24px;
+  /*  adiciona sombra para destacar blocos*/
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #d39a0c;
+}
+
+header p {
+  /* controla a altura entre as linhas de texto*/
+  line-height: 1.6;
+  /* define o nível de transparencia do elemento: 0 invisivel*/
+  opacity: 0.8;
+}
+
+section h2 {
+  margin-top: 0;
+  color: #d39a0c;
+}
+
+table {
+  width: 100%;
+  /* junta as bordas da tabela para evitar linhas duplas */
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+}
+
+th {
+  background-color: rgba(255, 180, 3, 0.2);
+}
+
+td {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+table a {
+  color: #ffb703;
+  text-decoration: none;
+}
+
+table a:hover {
+  color: #f4f7fb;
+}

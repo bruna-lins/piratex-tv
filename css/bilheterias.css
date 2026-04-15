@@ -1,0 +1,23 @@
+main {
+  align-items: start; /* align-items alinha os itens no eixo cruzado dentro de grid ou flex */
+}
+
+section {
+  overflow-x: auto; /* overflow-x controla o excesso de conteúdo na horizontal; 
+  auto cria rolagem quando necessário */
+}
+
+table {
+  min-width: 40rem; /* min-width define uma largura mínima para evitar que a 
+  tabela fique espremida demais */
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+td:last-child,
+th:last-child {
+  text-align: right; /* td e th selecionam as células da tabela; :last-child é uma pseudo-classe que pega o 
+  último elemento dentro da linha, então aqui o último td ou th fica alinhado à direita */
+}

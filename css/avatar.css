@@ -1,0 +1,85 @@
+/*
+  Classe x tag direta no CSS
+
+  1. Estilização por classe
+  Exemplo: .avatar-resumo, .avatar-trailer
+  A classe é um nome criado por nós no HTML para marcar elementos específicos.
+
+  Vantagens:
+  - deixa o CSS mais explícito e fácil de entender
+  - evita que outros elementos do mesmo tipo recebam o estilo sem querer
+  - facilita reaproveitar o mesmo estilo em mais de um elemento
+  - ajuda na manutenção quando a página cresce
+
+  Desvantagens:
+  - exige adicionar classes no HTML
+  - pode deixar o HTML um pouco mais detalhado
+
+  Casos de uso:
+  - quando queremos estilizar uma parte específica da página
+  - quando o projeto vai crescer e precisa de organização
+  - quando queremos maior controle para futuras alterações
+
+  2. Estilização por tag direta
+  Exemplo: section, p, iframe
+  Nesse caso, o CSS atinge todos os elementos daquela tag dentro do escopo usado.
+
+  Vantagens:
+  - é mais rápido para começar
+  - funciona bem em páginas pequenas e simples
+  - reduz a quantidade de classes no HTML
+
+  Desvantagens:
+  - pode aplicar estilos em elementos que não deveriam receber aquele visual
+  - fica mais difícil de controlar quando a página cresce
+  - torna a manutenção menos precisa
+
+  Casos de uso:
+  - estilos bem gerais e básicos
+  - projetos pequenos
+  - quando todos os elementos da mesma tag realmente devem ter o mesmo visual
+
+  Resumo prático:
+  - usar tag direta é bom para regras globais ou muito amplas
+  - usar classe é melhor quando queremos intenção, organização e controle
+
+*/
+
+.avatar-main {
+  justify-items: center; /* justify-items alinha os elementos no 
+  eixo horizontal dentro do grid */
+}
+
+.avatar-section {
+  width: 100%;
+  max-width: 56rem;
+}
+
+.avatar-resumo {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.04
+  ); /* rgba recebe os valores nesta ordem: red, green, blue, alpha(opacidade); os 3 primeiros vão de 0 a 255 
+  e o último vai de 0 a 1 */
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.avatar-trailer {
+  width: 100%;
+  min-height: 28rem; /* min-height define uma altura mínima para o elemento */
+  border: none; /* none remove a borda padrão do elemento */
+  border-radius: 18px;
+}
+
+/* @media cria uma regra condicional para adaptar o layout a determinados tamanhos de tela; 
+aqui, quando a tela tiver no máximo 768px, o vídeo recebe uma altura mínima menor para funcionar melhor no celular */
+@media (max-width: 768px) {
+  .avatar-trailer {
+    min-height: 16rem;
+  }
+}
