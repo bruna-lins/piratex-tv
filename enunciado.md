@@ -122,5 +122,6 @@ BRANCH = Ramificação do repositório. Extremamente útil para trabalhar coisas
 
 _git checkout -b JS-DOM_ -> Cria uma nova branch e se move para ela
 _git checkout main_ -> se move para a branch indicada (no caso, main)
+_git push origin JS-DOM_ -> após o primeiro push, esse é o padrão: JS-DOM deve ser trocado pela sua _branch_ atual
 
 DIFF -> O antes vs. o depois
