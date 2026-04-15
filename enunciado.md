@@ -113,3 +113,14 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/bruna-lins/piratex-tv.git
 git push -u origin main
+
+U - Untracked = Não rastreado
+A - Added = Adicionado
+M - Modified = Modificado
+
+BRANCH = Ramificação do repositório. Extremamente útil para trabalhar coisas novas ou em equipe.
+
+_git checkout -b JS-DOM_ -> Cria uma nova branch e se move para ela
+_git checkout main_ -> se move para a branch indicada (no caso, main)
+
+DIFF -> O antes vs. o depois
