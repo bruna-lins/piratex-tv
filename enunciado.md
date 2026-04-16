@@ -104,6 +104,66 @@ Aplicar melhorias como:
 
 ---
 
+# Atividade 3 — Continuação com foco em JavaScript e DOM
+
+Agora vamos usar **JavaScript com DOM** para deixar o projeto mais interativo.
+
+A ideia desta etapa é ensinar como:
+
+- selecionar elementos do HTML com JavaScript
+- alterar textos e classes
+- criar elementos dinamicamente
+- responder a eventos de clique e digitação
+- atualizar o conteúdo da página sem reescrever o HTML inteiro
+
+### **Task 1 — Criar a base JavaScript do projeto**
+
+Organize a parte de JavaScript em arquivos separados, seguindo a mesma ideia usada no CSS:
+
+- um arquivo JS global para comportamentos compartilhados - OK
+- arquivos específicos para cada página que terá interação - OK
+- conexão dos scripts nas páginas HTML - OK
+
+### **Task 2 — Destacar no menu a página atual**
+
+Use DOM para:
+
+- selecionar os links da navegação - OK
+- descobrir qual página está aberta no navegador - OK
+- adicionar uma classe no link correspondente - OK
+- destacar visualmente a página atual no menu - OK
+
+### **Task 3 — Montar a tabela de bilheterias com DOM**
+
+Em vez de deixar todas as linhas prontas no HTML, use JavaScript para:
+
+- um arquivo com os dados dos filmes para reaproveitar nas páginas
+- ler os dados do ranking de bilheterias
+- criar as linhas da tabela com `createElement`
+- inserir as linhas no `tbody`
+- criar botões para alternar entre **Top 3** e **Top 5**
+- atualizar um texto mostrando quantos filmes estão sendo exibidos
+
+### **Task 4 — Criar uma busca dinâmica na página da Netflix**
+
+Use DOM para:
+
+- capturar o que o usuário digita em um campo de busca
+- filtrar os filmes pelo nome
+- atualizar a tabela em tempo real
+- mostrar quantos filmes foram encontrados
+
+### **Task 5 — Mostrar e esconder curiosidades na página Avatar**
+
+Na página de detalhes do filme, use JavaScript para:
+
+- criar uma área de curiosidades
+- preencher essa área com itens vindos de um array
+- mostrar ou esconder o conteúdo com um botão
+- trocar o texto do botão conforme o estado da interface
+
+---
+
 ## Comandos para iniciar o repositorio no github
 
 echo "# piratex-tv" >> README.md
@@ -123,5 +183,6 @@ BRANCH = Ramificação do repositório. Extremamente útil para trabalhar coisas
 _git checkout -b JS-DOM_ -> Cria uma nova branch e se move para ela
 _git checkout main_ -> se move para a branch indicada (no caso, main)
 _git push origin JS-DOM_ -> após o primeiro push, esse é o padrão: JS-DOM deve ser trocado pela sua _branch_ atual
+_git pull origin main_ -> ele "puxa" as alterações que existem no Github para nosso ambiente local (nosso computador).
 
 DIFF -> O antes vs. o depois
