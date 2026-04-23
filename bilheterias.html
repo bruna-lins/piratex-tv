@@ -6,6 +6,7 @@
     <title>Filmes mais populares</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bilheterias.css" />
   </head>
   <body>
     <nav>
@@ -23,31 +24,37 @@
 
     <main>
       <section>
+        <h2>Tabela de Bilheterias</h2>
+
+        <div class="controles-dom">
+          <button class="botao-dom" type="button" data-limite="3">
+            Mostrar Top 3
+          </button>
+          <button class="botao-dom" type="button" data-limite="5">
+            Mostrar Top 5
+          </button>
+        </div>
+
+        <p class="contador-dom" data-resumo-bilheterias>
+          Carregando ranking de bilheterias...
+        </p>
+
         <table border="1">
-          <tr>
-            <th>Nome</th>
-            <th>Ano</th>
-            <th>Bilheteria</th>
-          </tr>
-          <tr>
-            <td><a href="avatar.html">Avatar</a></td>
-            <td>2009</td>
-            <td>US$ 2,923,710,708</td>
-          </tr>
-          <tr>
-            <td>Avengers: Endgame</td>
-            <td>2019</td>
-            <td>US$ 2,799,439,100</td>
-          </tr>
-          <tr>
-            <td>Avatar: The Way of Water</td>
-            <td>2022</td>
-            <td>US$ 2,334,484,620</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Ano</th>
+              <th>Bilheteria</th>
+            </tr>
+          </thead>
+
+          <tbody data-tabela-bilheteria></tbody>
         </table>
       </section>
     </main>
 
+    <script src="js/dados.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/bilheterias.js"></script>
   </body>
 </html>

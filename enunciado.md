@@ -137,12 +137,12 @@ Use DOM para:
 
 Em vez de deixar todas as linhas prontas no HTML, use JavaScript para:
 
-- um arquivo com os dados dos filmes para reaproveitar nas páginas
-- ler os dados do ranking de bilheterias
-- criar as linhas da tabela com `createElement`
-- inserir as linhas no `tbody`
-- criar botões para alternar entre **Top 3** e **Top 5**
-- atualizar um texto mostrando quantos filmes estão sendo exibidos
+- um arquivo com os dados dos filmes para reaproveitar nas páginas - OK
+- ler os dados do ranking de bilheterias - OK
+- criar as linhas da tabela com `createElement` - OK
+- inserir as linhas no `tbody` - OK
+- criar botões para alternar entre **Top 3** e **Top 5** - OK
+- atualizar um texto mostrando quantos filmes estão sendo exibidos - OK
 
 ### **Task 4 — Criar uma busca dinâmica na página da Netflix**
 
