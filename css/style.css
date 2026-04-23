@@ -58,6 +58,11 @@ nav a:hover {
   color: #081120;
 }
 
+nav a.link-ativo {
+  background-color: #ffb703;
+  color: #081120;
+}
+
 header,
 main {
   /* limita a largura máxima; rem é útil para medidas ligadas a 

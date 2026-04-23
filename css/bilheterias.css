@@ -7,6 +7,27 @@ section {
   auto cria rolagem quando necessário */
 }
 
+.controles-dom {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.botao-dom {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 999px;
+  background-color: #ffd166;
+  color: #081120;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contador-dom {
+  margin-bottom: 16px;
+}
+
 table {
   min-width: 40rem; /* min-width define uma largura mínima para evitar que a 
   tabela fique espremida demais */
